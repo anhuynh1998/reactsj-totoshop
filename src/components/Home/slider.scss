@@ -1,0 +1,33 @@
+
+.slider-content{
+    margin-bottom: 20px;
+}
+.image-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .banner-left{
+        
+        display: flex;
+        justify-content: end;
+        padding: 40px 10px 40px 40px;
+        img{
+            width: 80%;
+            -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 2s, transform 2s;
+        }
+    }
+    .banner-right{
+       padding: 40px 40px 40px 10px;
+        img{
+            width: 80%;
+        }
+    }
+
+}
+.carousel-control-prev{
+    z-index: 0 !important;
+}
+.carousel-control-next{
+    z-index: 0 !important;
+}

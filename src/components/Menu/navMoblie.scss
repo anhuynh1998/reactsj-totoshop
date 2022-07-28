@@ -1,0 +1,114 @@
+.nav-bar-mobile{
+    position: sticky;
+    z-index: 99999;
+    top: 0px;
+    left: 0;
+    right: 0;
+    .navbar{
+        padding-right: 20px;
+        padding-left: 20px;
+        .navbar-brand {
+            font-size: 23px;
+            font-weight: 800;
+            font-family: system-ui;
+            }
+            .content-right-nav{
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+                .cart{
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+            }
+    }
+    li{
+        list-style: none;
+    }
+    .nav-link {
+        cursor: pointer;
+        text-transform: uppercase; 
+        text-align: center;
+        color: black;
+        padding: 20px 0 20px 0;
+        border-bottom: 0.5px solid #e9dcdc;
+        &:hover{
+        color: #0adebb;
+
+        
+    }
+}
+    
+   
+}
+.nav-mobie {
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 9900;
+}
+
+@media screen and (max-width: 1024px){
+    .Modal{
+        margin-top: 100px;
+   
+}
+
+}
+@media screen and (max-width: 960px){
+    Modal{
+         flex: 1;
+  
+        overflow-y: scroll;
+        position: absolute;
+    }
+
+        .cart-oder {
+            display: flex;
+            justify-content: space-around;
+            .cart-oder-item-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                     .cart-oder-item {
+                        margin-top: 15px;
+                        display: flex;
+                        grid-gap: 62px;
+                        gap: 41px;
+                        justify-content: flex-start;
+                    }
+                }
+        }
+   
+}
+@media screen and (max-width: 650px){
+    .cart-oder {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .cart-oder-item-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                     .cart-oder-item {
+                        margin-top: 15px;
+                        display: flex;
+                        grid-gap: 62px;
+                        gap: 17px;
+                        justify-content: flex-start;
+                    }
+                }
+                .check-out{
+                    border: none;
+                }
+        }
+   }
+@media screen and (max-width: 450px){
+    .Modal{
+        margin-top: 100px;
+        
+   
+}
+}
